@@ -19,7 +19,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"new_product": {"name": "M
 
 curl -H "Content-Type: application/json" --request GET -d '{"filter_option": "color", "filter_value": "black" }' http://127.0.0.1:5000/get_list
 
-В ответ вы получите список всех товаров с параметром "color":"black" и их идентефикаторы
+В ответ вы получите список всех товаров с параметром "color":"black"
 
 
 ### Получить детали товара
