@@ -85,24 +85,3 @@ print('test02 : ', test.get_list(400, '',''))
 print('test03 : ', test.get_list(404, 'not_option', 'blah'))
 print('test01 : ', test.get_list(200, 'color', 'black'))
 
-
-
-
-'''
-#headers = {
-#    'cache-control': "no-cache",
-#}
-#cookies = {
-#    'ASP.NET_SessionId': 'dbyn3xdli5iugqtn1oulkyik',
-#    'BPOFLogin': '047FD1144C4400DD103E52BF4D13E31F42E6BFA1A94D78C7E53071B116418CBADC61597EE5F7369A21E22C1E33540691EC546FA950916342E530AE56BA80CEF0DB988ABC681C66A79F0A98EAF5009569EE0CC6FAD7E14E537652AE2E1BCD50C3DFDF9013DC7D6AA8E7F0358FA97526E9',
-#}
-#data = {
-#    'some_input_name': 'some input value',
-#    'another_input_name': 'another input value',
-#}
-#files = {
-#    'some_file_name': open('file.jpg', 'rb')
-#}
-#
-#r = requests.post(url, headers=headers, cookies=cookies, data=data, files=files)
-'''
