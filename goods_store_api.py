@@ -45,7 +45,7 @@ def get_list(option):
 
 def abort_if_bad_product(new_product):
     # только проверка на пустую строку
-    # можно доваить проверки на наличие всех ключей, не пустые значения и т.п. 
+    # можно доваить проверки на наличие всех ключей, на непустые значения и т.п.
     if not new_product: 
         abort(400, message="Bad request")
     
@@ -93,10 +93,10 @@ class Product(Resource):
 
     def post(self):
         args = parser.parse_args()
-        print(type(args['new_product']))
         abort_if_bad_product(args['new_product'])
         
-        new_product = json.loads(args['new_product'])
+        new_product = json.loads(args['new_product'].replace("'", '"'))
+
         abort_if_product_exist(new_product)
         product_id = create_new_product(new_product)
         return {'product_id': product_id}, 201
@@ -120,5 +120,5 @@ api.add_resource(Get_list, '/get_list')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 

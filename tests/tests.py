@@ -59,10 +59,12 @@ class goods_test:
 
 test = goods_test(url)
 
-product = {"name": "XMIphone", 
+product = {"name": "Dff", 
            "discription": "Norm", 
            "options": [("color","black"),("diagonal", 6.5),("processor","GGXXXL")]
             } 
+
+print(type(json.dumps(product)))
 
 print('________________________________________')
 print('START get_product tests')
