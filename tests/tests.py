@@ -85,5 +85,5 @@ print('START get_list tests')
 print('test01 : ', test.get_list(200, 'name', None))
 print('test02 : ', test.get_list(400, '',''))
 print('test03 : ', test.get_list(404, 'not_option', 'blah'))
-print('test01 : ', test.get_list(200, 'color', 'black'))
+print('test04 : ', test.get_list(200, 'color', 'black'))
 

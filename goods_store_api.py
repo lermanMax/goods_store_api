@@ -37,6 +37,7 @@ def get_list(option):
                 if couple[0] == option['filter_option']:
                     if couple[1] == option['filter_value']:
                         goods_list.append(item['name'])
+                        break
             
          
     return goods_list
@@ -120,5 +121,5 @@ api.add_resource(Get_list, '/get_list')
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
 
