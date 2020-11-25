@@ -1,13 +1,13 @@
 # goods_store_api
 
 
-## Шаги для запуска сервиса
+## Запуск сервиса
 
-1. установить зависимости: 
+#### 1. Установить зависимости: 
 ```
 pip install -r requirements.txt
 ```
-2. запустить: 
+#### 2. Запустить: 
 ```
 python3 goods_store_api.py
 ```
@@ -23,7 +23,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"new_product": {"name": "M
 ```
 curl -H "Content-Type: application/json" --request GET -d '{"filter_option": "color", "filter_value": "black" }' http://127.0.0.1:5000/get_list
 ```
-В ответ вы получите список всех товаров с параметром "color":"black"
+В ответ вы получите список всех товаров с параметром "color": "black"
 
 
 #### 3. Получить детали товара
